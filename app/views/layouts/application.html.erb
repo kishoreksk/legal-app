@@ -12,9 +12,16 @@
   </head>
 
   <body>
-    <main class="container mx-auto mt-28 px-5 flex">
-      <%= link_to "Dashboard",  new_organization %>
-      <%= link_to "Home", root_path%>
+  <div>
+    <%= link_to "Home", root_path%>
+  </div>
+  <div>
+    <%= link_to "Create New Organization",  new_organization_path %>
+
+  </div>
+
+
+  <main class="container mx-auto mt-20 px-5 flex">
 
       <%= yield %>
     </main>
