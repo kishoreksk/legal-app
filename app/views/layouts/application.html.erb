@@ -12,18 +12,38 @@
   </head>
 
   <body>
-  <div>
-    <%= link_to "Home", root_path%>
-  </div>
-  <div>
-    <%= link_to "Create New Organization",  new_organization_path %>
-
-  </div>
 
 
-  <main class="container mx-auto mt-20 px-5 flex">
+  <main class="container">
+    <nav class="bg-sky-600 flex">
+      <a href="/" class="flex items-center ml-4 mt-4 mb-4 mx-auto">
+        <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Legal App</span>
+      </a>
 
+      <div class="flex ml-4 mt-4 mx-auto ">
+        <span class="text-xl text-white">
+          <%= link_to "Home", root_path%>
+        </span>
+
+      </div>
+
+    </nav>
+    <div class="mt-10 ml-5">
+      <button class="bg-blue-600 px-4 py-2 rounded-lg text-white">
+        <%= link_to "Create New Organization",  new_organization_path %>
+
+      </button>
+
+    </div>
+    <div class="bg-gray-200 mt-10 mx-auto px-20 py-10">
       <%= yield %>
+
+    </div>
+
+
+
+
+
     </main>
   </body>
 </html>

@@ -1,9 +1,17 @@
+<div class="mt-10 ml-5 mb-5">
+  <button class="bg-blue-600 px-4 py-2 rounded-lg text-white">
 <h1>New organization</h1>
+  </button>
+</div>
 
 <%= render "form", organization: @organization %>
 
 <br>
 
-<div>
-  <%= link_to "Back to organizations", organizations_path %>
+<div class="mt-10 ml-5">
+  <button class="bg-blue-600 px-4 py-2 rounded-lg text-white">
+    <%= link_to "Back to organizations", organizations_path %>
+  </button>
 </div>
+
+
